@@ -27,14 +27,14 @@
     &:hover::before{
       content: '+';
       position: absolute;
-      top: -5px;
+      top: -7px;
       right: -12px;
     }
   }
   &__list-link--active::before{
     content: '+';
     position: absolute;
-    top: -5px;
+    top: -7px;
     right: -12px;
   }
 }
@@ -46,7 +46,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    padding: 17px 0;
+    padding: 16px 0;
   }
   &__link--search{
     margin-right: 20px;
@@ -94,7 +94,105 @@
   }
 }
 
+.footer-top{
+  padding: 75px 0;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__item{
+    margin-right: 100px;
+    width: 215px;
+  }
+  &__item-form{
+    max-width: 270px;
+    margin-right: 0;
+  }
+  &__logo{
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__item-form{
+    width: 270px;
+    margin-right: 0;
+  }
+  &__title{
+    margin: 14px 0 19px;
+    color: #1f2044;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+  &__list-item{
+   margin-bottom: 10px;
+  }
+  &__list-link,
+  &__adress,
+  &__phone,
+  &__email,
+  &__form-text{
+    display: block;
+    @extend %rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  &__form-text{
+    margin-bottom: 40px;
+  }
+  &__form-input{
+    background-color: #fef7f0;
+    border: none;
+    max-width: 170px;
+    height: 36px;
+    color: #234969;
+    font-size: 12px;
+    @extend %dmsans-400;
+    padding: 0 5px 0 15px;
+  }
+  &__form-btn{
+    border: none;
+    max-width: 90px;
+    height: 36px;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    @extend %dmsans-400;
+    cursor: pointer;
+  }
+}
 
+.footer-bottom{
+  height: 90px;
+  @extend %rubik-400;
+  font-size: 14px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu{
+    display: flex;
+  }
+  &__menu-item{
+    margin: 0 15px;
+    position: relative;
+    &:after{
+      content: '|';
+      position: absolute;
+      top: 0;
+      right: -15px;
+    }
+  }
+  &__menu-item--contact{
+    margin: 0 0 0 15px;
+      &:after{
+      content: none;
+    }
+  }
+  &__menu-link{
+    color: #7b7b7b;
+  }
+}
 
 
 @import 'media';
