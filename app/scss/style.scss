@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -151,7 +152,7 @@
   }
   &__form-btn{
     border: none;
-    max-width: 90px;
+    max-width: 100px;
     height: 36px;
     background-color: #a3bbc8;
     color: #fff;
@@ -191,6 +192,87 @@
   }
   &__menu-link{
     color: #7b7b7b;
+  }
+}
+
+.slider-top{
+  &__inner{
+  background-color: #fcd7b6;
+  background-image: url(../images/slider/slider-bg.png);
+  background-repeat: no-repeat;
+  background-size: 38%;
+  background-position-x: 86%;
+  background-position-y: center; 
+  padding: 220px 0 45px;
+  }
+  &__item{
+    display: flex !important;
+    justify-content: center;
+  }
+  &__content{
+    margin-right: 130px;
+  }
+  &__title{
+    font-size: 72px;
+    line-height: 70px;
+    @extend %rubik-500;
+    color: #243f4d;
+    max-width: 420px;
+    margin-bottom: 45px;
+  }
+  &__text{
+    font-size: 18px;
+     @extend %rubik-500;
+     color: $default;
+     max-width: 370px;
+     margin-bottom: 45px;
+  }
+  &__link{
+    color: #fff;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 23px 98px 23px 28px;
+    background-color: #a3bbc8;
+    position: relative;
+    display: block;
+    width: 200px;
+    &::after{
+      content: url(../images/slider/link-arrow.png);
+      position: absolute;
+      top: 23px;
+      right: 17px;
+    }
+  }
+  &__png{
+    width: 638px;
+    height: 277px;
+    align-self: flex-end;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    li{
+
+      button{
+        font-size: 10px;
+        line-height: 4px;
+        color: #667983;
+        border: none;
+        background-color: #fde3cc;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        margin: 0 6px;
+        cursor: pointer;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          color: #243f4d;
+        }
+      }
+    }  
   }
 }
 
