@@ -222,13 +222,14 @@
   }
   &__text{
     font-size: 18px;
-     @extend %rubik-500;
+     @extend %rubik-400;
      color: $default;
      max-width: 370px;
      margin-bottom: 45px;
   }
   &__link{
     color: #fff;
+    @extend %rubik-500;
     font-size: 15px;
     line-height: 12px;
     padding: 23px 98px 23px 28px;
@@ -275,6 +276,85 @@
     }  
   }
 }
+
+.info{
+  &__items{
+    background-color: #fef7f0;
+    display: flex;
+    justify-content: center;
+  }
+  &__item{
+    max-width: 200px;
+    position: relative;
+    margin: 0 185px;
+    &--support::before,
+    &--delivery::before,
+    &--payment::before{
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 47px;
+      left: -83px;
+    }
+    &--support::before{
+      background-image: url(../images/icon/support.svg);
+    }
+    &--delivery::before{
+      background-image: url(../images/icon/delivery.svg);
+    }
+    &--payment::before{
+      background-image: url(../images/icon/payment.svg);
+    }
+  }
+
+  &__item-title{
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+    margin-top: 35px;
+  }
+  &__item-text{
+    @extend %dmsans-400;
+    color: #585858;
+    margin-bottom: 35px;
+  }
+}
+
+.products{
+  &__content{
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 380px 380px ;
+    grid-gap: 40px 30px;
+  }
+  &__item{
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__item-image{
+    object-fit: contain;
+  }
+  &__item-title{
+    font-size: 16px;
+    line-height: 40px;
+    color: #243f4d;
+    @extend %dmsans-500;
+    margin-top: 55px;
+  }
+  &__item-price{
+    line-height: 40px;
+    color: #a3bbc8;
+  }
+}
+
+
+
 
 
 @import 'media';

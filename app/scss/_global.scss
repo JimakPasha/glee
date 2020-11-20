@@ -27,3 +27,36 @@ body{
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.title{
+  font-size: 36px;
+  line-height: 42px;
+  color: $title-block;
+}
+
+.title-filter{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.filter-btns{
+  text-align: center;
+}
+
+.filter-btn{
+  margin-top: 35px;
+  border: none;
+  background-color: transparent;
+  color: #8b8b8b;
+  &:hover{
+    color: $title-block;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+.filter-btn + .filter-btn{
+  margin-left: 30px;
+}
+.mixitup-control-active{
+  color: $title-block;
+}
