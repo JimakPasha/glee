@@ -383,7 +383,7 @@
   }
   &__item-price{
     line-height: 40px;
-    color: #a3bbc8;
+    color: $price;
   }
 }
 
@@ -448,6 +448,38 @@
       transform: translateY(-50%);
       right: 23px;
     }
+  }
+}
+
+.new-design{
+  &__title{
+    margin-top: 100px;
+  }
+  &__content{
+    margin: 75px 0 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 34px 30px;
+  }
+  &__item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 370px;
+    height: 245px;
+    display: inline-block;
+    border-radius: 4px;
+  }
+  &__item-title{
+    color: $title-block;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 40px 0 8px 36px;
+    width: 175px;
+  }
+  &__item-descr{
+    color: $price;
+    margin-left: 36px;
   }
 }
 
