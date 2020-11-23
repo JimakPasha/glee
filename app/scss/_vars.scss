@@ -1,5 +1,6 @@
 $default: #436372;
 $title-block: #191919;
+$price: #a3bbc8;
 
 %rubik-400{
   font-family: 'Rubik-Regular', sans-serif;
@@ -24,4 +25,11 @@ $title-block: #191919;
 %dmsans-700{
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function max($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

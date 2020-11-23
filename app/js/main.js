@@ -9,6 +9,17 @@ $(function () {
   });
 
   var mixer = mixitup('.products__content', {
+    selectors: {
+      control: '.products__btn'
+    },
+    animation: {
+      duration: 600
+    }
+  });
+    var mixer = mixitup('.new-design__content', {
+    selectors: {
+      control: '.new-design__btn'
+    },
     animation: {
       duration: 600
     }
