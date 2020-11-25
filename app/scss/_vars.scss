@@ -27,6 +27,12 @@ $price: #a3bbc8;
   font-weight: 700;
 }
 
+%poppins-700{
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
