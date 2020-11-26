@@ -60,3 +60,10 @@ body{
 .mixitup-control-active{
   color: $title-block;
 }
+
+.page-title-section{
+  font-size: 36px;
+  line-height: 38px;
+  color: $title-page-section;
+  @extend %dmsans-700;
+}

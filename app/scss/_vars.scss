@@ -1,6 +1,12 @@
 $default: #436372;
 $title-block: #191919;
 $price: #a3bbc8;
+$title-page-section: #243f4d;
+
+%rubik-300{
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
 
 %rubik-400{
   font-family: 'Rubik-Regular', sans-serif;
@@ -10,6 +16,11 @@ $price: #a3bbc8;
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+
+%rubik-700{
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
 }
 
 %dmsans-400{
@@ -25,6 +36,11 @@ $price: #a3bbc8;
 %dmsans-700{
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%poppins-600{
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
 }
 
 %poppins-700{

@@ -565,6 +565,157 @@
   }
 }
 
+.page-header{
+  height: 124px;
+  background-color: #edf1f4;
+  text-align: center;
+}
+.page-title__about{
+  font-size: 36px;
+  line-height: 42px;
+  @extend %rubik-300;
+  color: #222933;
+  padding: 24px 0 4px;
+  &__subtitle{
+    font-size: 14px;
+    line-height: 24px;
+    @extend %rubik-400;
+    color: #888c91;
+  }
+}
+
+.about{
+  margin: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: center;
+  }
+  &__img-box{
+    margin-right: 40px;
+  }
+  &__content{
+    max-width: 560px;
+  }
+  &__content-years{
+    margin: 110px 0 50px;
+  }
+  &__content-years-text{
+    max-width: 95px;
+    margin-left: 30px;
+    @extend %rubik-400;
+    color: #243f4d;
+    display: inline-block;
+  }
+  &__content-years-num{
+    font-size: 140px;
+    @extend %rubik-700;
+    color: #a3bbc8;
+    display: inline-block;
+  }
+  &__content-text{
+    margin: 33px 0 95px;
+    @extend %rubik-400;
+    color: #243f4d;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 2px;
+      background-color: #ebeef3;
+      bottom: -62px;
+      left: 0;
+    }
+  }
+  &__content-statistics-items{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 27px;
+  }
+  &__content-statistics-item{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about__content-statistics-item--revenue{
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      background-color: #e6eaf0;
+      width: 1px;
+      height: 80px;
+      top: -8px;
+      left: -28px;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      background-color: #e6eaf0;
+      width: 1px;
+      height: 80px;
+      top: -8px;
+      right: -28px;
+    }
+  }
+  &__content-statistics-img{
+    display: inline-block;
+    padding-right: 20px;
+  }
+  &__about__content-statistics-title{
+  }
+  &__content-statistics-text{
+    color: #4c4c4c;
+  }
+}
+
+.statistics{
+  margin-top: 120px;
+  height: 320px;
+  background-color: #fcd7b6;
+  &__item{
+    position: relative;
+    &--satisfied::before,
+    &--delivery::before,
+    &--support::before,
+    &--brands::before{
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: -75px;
+      right: -50px;
+    }
+    &--satisfied::before{
+      background-image: url(../images/icon/satisfied-blue.svg);
+    }
+    &--delivery::before{
+      background-image: url(../images/icon/delivery-blue.svg);
+      top: -65px;
+    }
+    &--support::before{
+      background-image: url(../images/icon/support-blue.svg);
+      right: -47px;
+    }
+    &--brands::before{
+      background-image: url(../images/icon/brands.svg);
+      right: -40px;
+    }
+  }
+
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px;
+    padding-top: 170px;
+  }
+  &__item-text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #243f4d;
+  }
+}
 
 
 
