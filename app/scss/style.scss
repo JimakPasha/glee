@@ -698,7 +698,26 @@
   }
 }
 
-
+.terms-conditions{
+  padding-top: 120px;
+  color: $title-page-section;
+  &__title{
+    font-size: 24px;
+    line-height: 40px;
+    @extend %rubik-500;
+    margin-bottom: 25px;
+  }
+  &__text{
+    @extend %rubik-400;
+    margin-bottom: 65px;
+  }
+  &__item{
+    margin-bottom: 27px;
+  }
+  &__item-num{
+    margin-right: 9px;
+  }
+}
 
 
 
