@@ -565,25 +565,6 @@
   }
 }
 
-.page-header{
-  height: 124px;
-  background-color: #edf1f4;
-  text-align: center;
-}
-.page-title__about{
-  font-size: 36px;
-  line-height: 42px;
-  @extend %rubik-300;
-  color: #222933;
-  padding: 24px 0 4px;
-  &__subtitle{
-    font-size: 14px;
-    line-height: 24px;
-    @extend %rubik-400;
-    color: #888c91;
-  }
-}
-
 .about{
   margin: 120px 0;
   &__inner{
