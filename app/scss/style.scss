@@ -565,6 +565,14 @@
   }
 }
 
+.partners-login-page{
+  height: 248px;
+  &__list{
+    padding-top: 78px;
+    margin: 0;
+  }
+}
+
 .about{
   margin: 120px 0;
   &__inner{
@@ -720,6 +728,68 @@
   }
 }
 
+.modal{
+  padding: 120px 0;
+  max-width: 470px;
+  margin: 0 auto;
+  @extend %rubik-400;
+  &__label{
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    color: $default;
+  }
+  &__input{
+    margin: 14px 0 27px;
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    border: 1px solid #f6f6f6;
+    font-size: 22px;
+    color: #222933;
+  }
+  &__label-lost-wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 18px;
+    color: $default;
+    margin-bottom: 30px;
+  }
+  &__lost-pass{
+    color: $default;
+  }
+  &__not-reg{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: $default;
+    padding-top: 33px;
+    border-top: 1px solid #f6f6f6;
+  }
+  &__btn{
+    display: block;
+    width: 100%;
+    padding: 19px 0;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+  }
+  &__btn-login{
+    border: none;
+    background-color: $price;
+    color: #fff;
+    margin-bottom: 33px;
+  }
+  &__btn-create{
+    background-color: #fff;
+     color: #222933;
+     border: 2px solid $price;
+     margin-top: 23px;
+  }
+}
 
 
 
