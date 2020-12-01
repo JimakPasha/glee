@@ -1035,6 +1035,48 @@
   }
 }
 
+.filter-recent{
+  &__inner{
+    margin-top: 40px;
+  }
+  &__item{
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &__box-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 69px;
+    border: 2px solid #f2f2f2;
+    margin-right: 21px;
+  }
+  &__img{
+    object-fit: cover;
+  }
+  &__content{
+    line-height: 1;
+    @extend %rubik-400;
+    color: #333333;
+  }
+  &__name{
+    display: block;
+    font-size: 14px;
+    padding-top: 4px;
+    margin-bottom: 13px;
+  }
+  &__price{
+    font-size: 15px;
+    margin-top: 13px;
+  }
+}
+
+.jq-ry-container{
+  padding: 0;
+  margin-left: -3px;
+}
+
 
 
 

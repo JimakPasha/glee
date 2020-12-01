@@ -1,5 +1,12 @@
 $(function () {
 
+  $('.star').rateYo({
+    starWidth: "10px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffd633",
+    readOnly: true
+  });
+
   $('.filter-price__input').ionRangeSlider(
     {
       type: 'double',
