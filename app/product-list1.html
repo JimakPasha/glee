@@ -61,7 +61,7 @@
 
     <section class="breadcrumbs">
       <h2 class="breadcrumbs__title">
-        Log in
+        Product list 1
       </h2>
       <ul class="breadcrumbs__list">
         <li class="breadcrumbs__item">
@@ -71,44 +71,112 @@
         </li>
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">
-            Log in
+            Product list 1
           </a>
         </li>
       </ul>
     </section>
 
-    <section class="modal">
-      <div class="container">
-        <form class="modal__form" action="#">
-          <label class="modal__label">
-            Username or email address *
-            <input class="modal__input" type="text" required>
-          </label>
-          <label class="modal__label">
-            Password *
-            <input class="modal__input" type="password" required>
-          </label>
-          <button class="modal__btn" type="submit">
-            Login
-          </button>
-          <div class="modal__label-lost-wrapper">
-            <label class="modal__label">
-              <input type="checkbox" checked>
-              Remember me
+<section class="shop">
+  <div class="container-small">
+    <div class="shop__inner">
+      <div class="shop__filters filter">
+        <div class="filter__item filter-category">
+          <h3 class="filter__title">
+            CATEGORY<span class="filter__title-line"></span>
+          </h3>
+          <form class="filter-category__form"action="#">
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox" checked>
+              <div class="filter-category__checkbox">
+                <span>Chair</span>
+              </div>
             </label>
-            <a class="modal__lost-pass" href="#">
-              Lost your password?
-            </a>
-          </div>
-          <p class="modal__not-reg">
-            Not registered? No problem
-          </p>
-          <a class="modal__link" href="#">
-            Create an account
-          </a>
-        </form>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Table</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Lamp</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Watch</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Clock</span>
+              </div>
+            </label>
+          </form>
+        </div>
+        <div class="filter__item filter-price">
+          <h3 class="filter__title">
+            PRICE<span class="filter__title-line"></span>
+          </h3>
+          <form class="filter-price__form" action="#">
+            <input class="filter-price__input" type="text" data-min="0.00" data-max="999.00" data-from="250.00" data-to="750.00">
+            <label class="filter-price__label">
+              <span>$<span class="filter-price__from"></span></span>
+              <span>$<span class="filter-price__to"></span>
+            </label></span>
+          </form>
+        </div>
+        <div class="filter__item filter-brand">
+          <h3 class="filter__title">
+            BRAND<span class="filter__title-line"></span>
+          </h3>
+          <form class="filter-brand__form" action="#">
+            <label class="filter-brand__label">
+              <input class="filter-brand__input" type="checkbox" checked>
+              <div class="filter-brand__checkbox">
+                <span>RFL</span>
+                <span>(10)</span>
+              </div>
+            </label>
+            <label class="filter-brand__label">
+              <input class="filter-brand__input" type="checkbox">
+              <div class="filter-brand__checkbox">
+                <span>Brothers</span>
+                <span>(21)</span>
+              </div>
+            </label>
+            <label class="filter-brand__label">
+              <input class="filter-brand__input" type="checkbox">
+              <div class="filter-brand__checkbox">
+                <span>Regal</span>
+                <span class="filter-brand__checkbox-numb">(3)</span>
+              </div>
+            </label>
+            <label class="filter-brand__label">
+              <input class="filter-brand__input" type="checkbox">
+              <div class="filter-brand__checkbox">
+                <span>Nadia</span>
+                <span>(14)</span>
+              </div>
+            </label>
+            <label class="filter-brand__label">
+              <input class="filter-brand__input" type="checkbox">
+              <div class="filter-brand__checkbox">
+                <span>Otobi</span>
+                <span>(6)</span>
+              </div>
+            </label>
+          </form>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <div class="partners partners-only">
       <div class="container-small">
