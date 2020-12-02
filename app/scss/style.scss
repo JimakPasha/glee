@@ -382,8 +382,9 @@
     margin-top: 55px;
   }
   &__item-price{
-    line-height: 40px;
+    line-height: 1px;
     color: $price;
+    margin-bottom: 37px;
   }
 }
 
@@ -512,7 +513,7 @@
   &__content-descr{
     position: relative;
     max-width: 370px;
-    height: 110px;
+    min-height: 130px;
     margin: 35px 26px 25px 26px;
   }
   &__content-news{
@@ -532,10 +533,10 @@
   }
   &__content-text{
     @extend %dmsans-500;
-    min-height: 80px;
+    min-height: 91px;
     color: #262626;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 24px;
     padding-bottom: 17px;
     border-bottom: 1px solid #e0e0e0;
     padding-left: 4px;
@@ -546,10 +547,17 @@
     color: #222933;
     @extend %rubik-400;
     padding-left: 4px;
-    margin: 12px 0 18px;
+    margin-top: 18px;
+    display: inline-block;
   }
   &__content-by{
     margin-left: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #222933;
+    @extend %rubik-400;
+    margin-top: 18px;
+    display: inline-block;
   }
 }
 
@@ -558,14 +566,14 @@
   height: 435px;
   &__list{
     padding-top: 260px;
-    margin: -170px 84px 0 50px;
+    margin: -197px 84px 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
 
-.partners-login-page{
+.partners-only{
   height: 248px;
   &__list{
     padding-top: 78px;
@@ -706,6 +714,100 @@
   }
 }
 
+.team{
+  padding-top: 120px;
+  margin-bottom: 225px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__descr{
+    max-width: 310px;
+    color: $title-page-section;
+    margin-right: 85px;
+  }
+  &__descr-title{
+    margin-bottom: 35px;
+    color: $title-page-section;
+  }
+  &__descr-text{
+    @extend %rubik-400;
+    margin-bottom: 40px;
+  }
+  &__descr-btn{
+    padding: 16px;
+    display: block;
+    width: 170px;
+    height: 50px;
+    background-color: $price;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    @extend %poppins-600;
+    position: relative;
+    border-radius: 6px;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-about-page.svg);
+      width: 15px;
+      height: 11px;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px 30px;
+  }
+  &__content-item{
+    position: relative;
+  }
+  &____content-img{
+    width: 370px;
+    height: 320px;
+    object-fit: cover;
+  }
+  &__content-box{
+    max-width: 325px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    padding-left: 23px;
+    position: absolute;
+    left: -1px;
+    bottom: -67px;
+  }
+  &__content-name{
+    font-size: 22px;
+    line-height: 26px;
+    color: $default;
+    padding-top: 25px;
+    margin-bottom: 6px;
+  }
+  &__content-position{
+    @extend %rubik-400;
+    color: #565872;
+    padding-bottom: 30px;
+  }
+  &__content-social{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+  }
+  &__content-social-link{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    margin-left: 2px;
+    padding: 9px 11px;
+  }
+}
+
 .terms-conditions{
   padding-top: 120px;
   color: $title-page-section;
@@ -776,118 +878,280 @@
     font-size: 18px;
     line-height: 22px;
     cursor: pointer;
-  }
-  &__btn-login{
     border: none;
     background-color: $price;
     color: #fff;
     margin-bottom: 33px;
   }
-  &__btn-create{
+  &__link{
+    display: block;
+    width: 100%;
+    padding: 19px 0;
+    font-size: 18px;
+    line-height: 22px;
     background-color: #fff;
-     color: #222933;
-     border: 2px solid $price;
-     margin-top: 23px;
+    color: #222933;
+    border: 2px solid $price;
+    margin-top: 23px;
+    text-align: center;
   }
 }
 
-.team{
-  padding-top: 120px;
-  margin-bottom: 225px;
+.shop{
+  padding: 120px 0;
   &__inner{
     display: flex;
-    justify-content: space-between;
   }
-  &__descr{
-    max-width: 310px;
+  &__filters{
+    width: 270px;
+    margin-right: 30px;
+    display: table;
+  }
+}
+
+.filter{
+  &__title{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 24px;
     color: $title-page-section;
-    margin-right: 85px;
-  }
-  &__descr-title{
-    margin-bottom: 35px;
-    color: $title-page-section;
-  }
-  &__descr-text{
-    @extend %rubik-400;
-    margin-bottom: 40px;
-  }
-  &__descr-btn{
-    padding: 16px;
-    display: block;
-    width: 170px;
-    height: 50px;
-    background-color: $price;
-    color: #fff;
-    font-size: 15px;
-    line-height: 20px;
-    @extend %poppins-600;
-    position: relative;
-    border-radius: 6px;
-    &::after{
+    margin-bottom: 28px;
+    }
+    &__title-line{
+      position: relative;
+      &::before{
       content: '';
       position: absolute;
-      background-image: url(../images/icon/arrow-about-page.svg);
-      width: 15px;
-      height: 11px;
-      right: 25px;
+      width: 38px;
+      height: 2px;
+      background-color: $price;
+      left: 16px;
       top: 50%;
       transform: translateY(-50%);
     }
   }
-  &__content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 100px 30px;
+}
+
+.filter-category{
+  margin-bottom: 40px;
+  &__label{
+    display: block;
+    cursor: pointer;
+    &:last-child{
+      margin-bottom: 55px;
+    }
   }
-  &__content-item{
-    position: relative;
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox{
+      background-color: #edf1f4;
+    }
   }
-  &____content-img{
-    object-fit: cover;
-  }
-  &__content-box{
-    max-width: 325px;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
-    padding-left: 23px;
-    position: absolute;
-    left: -1px;
-    bottom: -67px;
-  }
-  &__content-name{
-    font-size: 22px;
-    line-height: 26px;
-    color: $default;
-    padding-top: 25px;
-    margin-bottom: 6px;
-  }
-  &__content-position{
+  &__checkbox{
     @extend %rubik-400;
-    color: #565872;
-    padding-bottom: 30px;
-  }
-  &__content-social{
-    position: absolute;
-    right: 20px;
-    bottom: 40px;
-  }
-  &__content-social-link{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #f6f6f6;
-    border-radius: 50%;
-    margin-left: 2px;
-    padding: 9px 11px;
+    line-height: 1;
+    color: $title-page-section;
+    padding: 14px 15px 12px;
+    border-radius: 6px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-right.svg);
+      width: 5px;
+      height: 10px;
+      right: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
+.filter-price{
+  margin-bottom: 85px;
+  &__label{
+    display: flex;
+    justify-content: space-between;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 1;
+    color: $title-page-section;
+    margin-right: 8px;
+  }
+}
 
+.irs--flat {
+    height: 48px;
+}
 
+.irs--flat .irs-line {
+    top: 14px;
+    height: 2px;
+    background-color: #c2d2db;
+}
 
+.irs--flat .irs-bar {
+    top: 13px;
+    height: 4px;
+    background-color: $price;
+}
 
+.irs--flat .irs-handle {
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    background-color: $price;
+}
 
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+
+.irs-min, .irs-max, .irs-from, .irs-to{
+  display: none;
+}
+
+.filter-brand{
+  margin-bottom: 60px;
+  &__label{
+    display: block;
+    cursor: pointer;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-brand__checkbox{
+      background-color: #edf1f4;
+      
+      }
+  }
+  &__checkbox{
+    display: flex;
+    justify-content: space-between;
+    @extend %rubik-400;
+    line-height: 1;
+    padding: 14px 15px 12px;
+    border-radius: 6px;
+    & span:last-child{
+      color: #b3b3b3;
+    }
+  }
+}
+
+.filter-recent{
+  &__inner{
+    margin-top: 40px;
+  }
+  &__item{
+    display: flex;
+    margin-bottom: 24px;
+  }
+  &__box-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 69px;
+    border: 2px solid #f2f2f2;
+    margin-right: 21px;
+  }
+  &__img{
+    object-fit: contain;
+  }
+  &__content{
+    line-height: 1;
+    @extend %rubik-400;
+    color: #333333;
+  }
+  &__name{
+    display: block;
+    color: #333333;
+    font-size: 14px;
+    padding-top: 4px;
+    margin-bottom: 13px;
+  }
+  &__price{
+    font-size: 15px;
+    margin-top: 13px;
+  }
+}
+
+.jq-ry-container{
+  padding: 0;
+  margin-left: -3px;
+}
+
+.shop-grid{
+  width: 100%;
+}
+
+.shop__products{
+    margin-bottom: 108px;
+    display: grid;
+    grid-template-columns: repeat(3,270px);
+    grid-auto-rows: 380px;
+    grid-gap: 40px 30px;
+}
+
+.shop-list{
+  &__item{
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__img-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    height: 500px;
+    margin-right: 55px;
+    border: 2px solid #f2f2f2;
+  }
+  &__img{
+    object-fit: contain;
+  }
+  &__title{
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 27px;
+    @extend %rubik-400;
+    font-size: 40px;
+    color: #333333;
+  }
+  &__price{
+    @extend %rubik-400;
+    font-size: 30px;
+    color: #333333;
+    margin-top: 35px;
+    margin-bottom: 31px;
+  }
+  &__text{
+    @extend %rubik-400;
+    color: $title-page-section;
+    margin-bottom: 40px;
+  }
+  &__link{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    margin-right: 11px;
+    &:hover{
+      background-color: #a3bac7;
+    }
+    &:hover .shop__item-icon path{
+      fill: rgb(255, 255, 255);
+      transition: all .3s;
+    }
+  }
+}
+
+.pagination-product-list2{
+  justify-content: start;
+  margin-top: 75px;
+}
 
 
 @import 'media';
