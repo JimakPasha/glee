@@ -1,7 +1,48 @@
 $(function () {
 
+  $('.related-slider__inner').slick({
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+
+  $('.product-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+
+  });
+
+  $('.product-page__num').styler();
+
+  $('.product-slide__thumb').slick({
+    asNavFor: '.product-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+  $('.product-slide__big').slick({
+    asNavFor: '.product-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true
+  });
+
   $('.star').rateYo({
+    starWidth: "16px",
+    spacing: "14px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffd633",
+    readOnly: true
+  });
+
+  $('.star-small').rateYo({
     starWidth: "10px",
+    spacing: "7px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffd633",
     readOnly: true
