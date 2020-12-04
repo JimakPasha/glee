@@ -33,7 +33,16 @@ $(function () {
   });
 
   $('.star').rateYo({
+    starWidth: "16px",
+    spacing: "14px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffd633",
+    readOnly: true
+  });
+
+  $('.star-small').rateYo({
     starWidth: "10px",
+    spacing: "7px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffd633",
     readOnly: true
