@@ -24,6 +24,9 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
-    "slick-carousel": "^1.8.1"
+    "form": "^0.2.4",
+    "jquery-form-styler": "^2.0.2",
+    "slick-carousel": "^1.8.1",
+    "styler": "0.0.15"
   }
 }
