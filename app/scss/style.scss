@@ -1969,7 +1969,185 @@
     }
   }
 
+  .contacts{
+    margin: 120px 0;
+  }
 
+  .contacts-top{
+    &__subtitle{
+      text-align: center;
+      @extend %poppins-700;
+      line-height: 20px;
+      color: $price;
+    }
+    &__title{
+      text-align: center;
+      font-size: 35px;
+      line-height: 57px;
+      color: $default;
+    }
+    &__inner{
+      margin: 70px 0 120px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item{
+      background-color: #fbfbfb;
+      max-width: 370px;
+      width: 100%;
+      height: 384px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all .3s;
+      &:hover{
+        border: 2px solid $price;
+        transition: all .3s;
+        .contacts-top__box{
+        transform: rotate(360deg);
+        background-color: $price;
+        transition: all .5s;
+        &:hover{
+        transform: scale(1.4);
+      }
+        }
+        path{
+          fill: #fff;
+          transition: all .3s;
+        }
+      }
+    }
+    &__item + .contacts-top__item{
+      margin-left: 28px;
+    }
+    &__box{
+      margin: 70px 0 60px;
+      background-color: #fff;
+      width: 80px;
+      height: 78px;
+      box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+      border-radius: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .3s ease-in;
+    }
+    &__item-title{
+      font-size: 20px;
+      line-height: 26px;
+      color: #222222;
+      margin-bottom: 16px;
+    }
+    &__text-contact,
+    &__text-contact-link{
+      @extend %rubik-400;
+      color: #565872;
+    }
+  }
 
+  .contacts-form-map{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+
+  .contacts-form{
+    width: 100%;
+    &__box-input{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 26px;
+    }
+    &__input{
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      background-color: #fafafa;
+      padding: 0 58px 0 22px;
+      text-transform: uppercase;
+      @extend %rubik-400;
+      color: #565872;
+      border: none;
+      &:focus{
+        outline: none;
+        box-shadow: 0px 6px 47px 3px rgba(163, 187, 200, 0.09);
+      }
+    }
+    &__input--email{
+      margin-left: 22px;
+    }
+    &__textarea{
+      display: inline-block;
+      width: 100%;
+      height: 175px;
+      background-color: #fafafa;
+      padding: 14px 58px 14px 22px;
+      text-transform: uppercase;
+      @extend %rubik-400;
+      color: #565872;
+      line-height: 20px;
+      border: none;
+      resize: none;
+      margin-bottom: 26px;
+      &:focus{
+        outline: none;
+        box-shadow: 0px 6px 47px 3px rgba(163, 187, 200, 0.09);
+      }
+    }
+    &__input-img--name,
+    &__input-img--email,
+    &__input-img--message{
+      position: relative;
+    }
+    &__input-img--name::before{
+      position: absolute;
+      content: '';
+      background-image: url(../images/icon/user-form.svg);
+      width: 14px;
+      height: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+    }
+    &__input-img--email::before{
+      position: absolute;
+      content: '';
+      background-image: url(../images/icon/email-form.svg);
+      width: 19px;
+      height: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+    }
+    &__input-img--message::before{
+      position: absolute;
+      content: '';
+      background-image: url(../images/icon/comments-form.svg);
+      width: 18px;
+      height: 14px;
+      right: 30px;
+      top: -168px;
+    }
+    &__btn{
+      font-size: 15px;
+      line-height: 1;
+      color: #fff;
+      background-color: #a3bbc8;
+      border: none;
+      padding: 18px 42px 18px 43px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+  }
+
+  #map{
+    width: 500px;
+    height: 340px;
+  }
+
+  .contacts-map{
+    margin-left: 50px;
+  }
 
 @import 'media';
