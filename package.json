@@ -27,6 +27,7 @@
     "form": "^0.2.4",
     "jquery-form-styler": "^2.0.2",
     "slick-carousel": "^1.8.1",
-    "styler": "0.0.15"
+    "styler": "0.0.15",
+    "swiper": "^6.3.5"
   }
 }

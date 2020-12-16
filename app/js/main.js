@@ -1,5 +1,6 @@
 $(function () {
 
+
   $('.related-slider__inner').slick({
     slidesToShow: 4,
     slidesToScroll: 4
@@ -49,10 +50,11 @@ $(function () {
     readOnly: true,
     starSvg: '<svg xmlns="http://www.w3.org/2000/svg" width="10pt" height="9pt" viewBox="0 0 10 9" version="1.1"><g><path d="M 4.5 0.3125 L 3.367188 2.640625 L 0.832031 3.015625 C 0.375 3.082031 0.195312 3.648438 0.523438 3.972656 L 2.359375 5.785156 L 1.925781 8.34375 C 1.847656 8.804688 2.328125 9.152344 2.730469 8.933594 L 5 7.726562 L 7.269531 8.933594 C 7.671875 9.148438 8.152344 8.804688 8.074219 8.34375 L 7.640625 5.785156 L 9.476562 3.972656 C 9.804688 3.648438 9.625 3.082031 9.167969 3.015625 L 6.632812 2.640625 L 5.5 0.3125 C 5.296875 -0.101562 4.707031 -0.105469 4.5 0.3125 Z M 4.5 0.3125 " /></g></svg >'
   });
-
+  
   $('.filter-price__input').ionRangeSlider(
     {
       type: 'double',
+      step: 0.01,
       onStart: function (data) {
         $('.filter-price__from').text(data.from);
         $('.filter-price__to').text(data.to);
